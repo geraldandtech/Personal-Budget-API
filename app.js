@@ -5,9 +5,20 @@ const cors = require('cors');
 
 const sequelize = require('./db/database');
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to the Personal Budget API',
+    version: '1.0.0',
+    documentation: '/api-docs'
+  });
+});
+
 const envelopeRoutes = require('./routes/envelopes');
 const transactionRoutes = require('./routes/transactions');
 const authRoutes = require('./routes/auth');
+
+const PORT = process.env.PORT || 3000;
 
 const {
   swaggerUi,
@@ -38,7 +49,6 @@ sequelize.sync()
     console.error(error);
   });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('Listening on port 3000');
 });
-
