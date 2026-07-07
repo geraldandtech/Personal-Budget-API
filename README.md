@@ -75,7 +75,7 @@ personal-budget-api/
 ## 1. Clone the repository
 
 ```bash
-https://github.com/geraldandtech/Personal-Budget-API/edit/main/README.md
+https://github.com/geraldandtech/Personal-Budget-API/tree/main
 ```
 
 ## 2. Navigate into the project
