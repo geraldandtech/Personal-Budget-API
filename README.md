@@ -50,6 +50,7 @@ https://personal-budget-api-1.onrender.com/api-docs
 
 # 📁 Project Structure
 
+```text
 personal-budget-api/
 │
 ├── config/
@@ -62,6 +63,7 @@ personal-budget-api/
 ├── app.js
 ├── package.json
 └── README.md
+```
 
 ---
 
@@ -71,20 +73,23 @@ Most endpoints require authentication.
 
 ## Register
 
+```http
 POST /auth/register
-
+```
 
 ## Login
 
+```http
 POST /auth/login
-
+```
 
 A successful login returns a JWT token.
 
 Include the token in the `Authorization` header when accessing protected endpoints:
 
+```http
 Authorization: Bearer YOUR_JWT_TOKEN
-
+```
 
 ---
 
